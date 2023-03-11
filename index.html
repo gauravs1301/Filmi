@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="homepagestyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- The .navbar div creates a navigation bar for the web page. -->
+      <a href="/index.html">
+        <div id="logo">FILMI</div>
+        <!-- The #logo div creates a logo for the web page. -->
+      </a>
+      <div id="search">
+        <form>
+          <!-- The <form> element is used to create a form for user input. -->
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Search movies..."
+            onkeyup="findMovies()"
+          />
+          <div class="search-list" id="search-list">
+            <!-- The .search-list div creates a dropdown list for search results. -->
+            <div class="search-list-item"></div>
+            <!-- The .search-list-item div creates a single item in the dropdown list. -->
+          </div>
+        </form>
+      </div>
+      <a href="/Favourite.html">
+        <!-- The <a> element is used to create a hyperlink. -->
+        <div id="favourite">
+          <i class="fa fa-heart"></i>
+          <!-- The <i> element is used to create an icon. -->
+        </div>
+      </a>
+    </div>
+    <div class="result-container">
+      <!-- The .result-container div creates a container for displaying search results. -->
+      <div class="result-grid" id="result-grid">
+        <!-- The .result-grid div creates a grid for displaying movie posters. -->
+        <div class="movie-poster">
+          <!-- The .movie-poster div creates a container for a single movie poster. -->
+          <img
+            src="assets/matrix.jpg"
+            style="
+              margin-left: -460px;
+              transform: perspective(800px) rotateX(0) rotateY(0)
+                translateZ(30px);
+              margin-top: -50px;
+            "
+          />
+          <!-- The style attribute is used to apply CSS styles inline. -->
+          <img
+            src="assets/lotr.jpg"
+            style="
+              transform: perspective(800px) rotateX(0) rotateY(0)
+                translateZ(70px);
+              margin-top: 50px;
+            "
+          />
+          <img src="assets/harrypotter.jpg" style="margin-top: 100px" />
+          <img
+            src="assets/spiderman.jpg"
+            style="
+              transform: perspective(800px) rotateX(0) rotateY(0)
+                translateZ(70px);
+              margin-top: 50px;
+            "
+          />
+          <img
+            src="assets/avatar.jpg"
+            style="
+              transform: perspective(800px) rotateX(0) rotateY(0)
+                translateZ(30px);
+              margin-top: -50px;
+            "
+          />
+        </div>
+      </div>
+    </div>
+    <!-- The script file is linked to the web page for adding functionality. -->
+    <script src="HomePage.js"></script>
+  </body>
+</html>
