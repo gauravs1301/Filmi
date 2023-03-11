@@ -12,8 +12,6 @@ This app is a simple movie search app that lets you search for your favorite mov
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
